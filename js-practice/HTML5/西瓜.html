@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #000000;
+        }
+        #cvs{
+            background: lightblue;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -250px;
+            margin-top: -250px;
+        }
+    </style>
+</head>
+<body>
+<canvas id="cvs" width="500px" height="500px"></canvas>
+<script>
+    var oCvs=document.getElementById("cvs");
+    var oCxt=oCvs.getContext("2d");
+
+    oCxt.beginPath();
+    oCxt.fillStyle="#fff";
+    oCxt.arc(135,154,100,2*Math.PI,0);
+    oCxt.fill();
+    oCxt.closePath();
+
+    oCxt.beginPath();
+    oCxt.fillStyle="black";
+    oCxt.arc(135,154,70,2*Math.PI,0);
+    oCxt.fill();
+    oCxt.closePath();
+
+    oCxt.beginPath();
+    oCxt.fillStyle="#fff";
+    oCxt.arc(375,154,100,2*Math.PI,0);
+    oCxt.fill();
+    oCxt.closePath();
+
+
+    oCxt.beginPath();
+    oCxt.fillStyle="black";
+    oCxt.arc(375,154,70,2*Math.PI,0);
+    oCxt.fill();
+    oCxt.closePath();
+
+
+    oCxt.beginPath();
+    oCxt.strokeStyle="#7b972c";
+    oCxt.lineWidth=6;
+    oCxt.arc(250,320,150,0,Math.PI);
+    oCxt.stroke();
+    oCxt.closePath();
+
+
+    oCxt.beginPath();
+    oCxt.strokeStyle="#dbe19d";
+    oCxt.lineWidth=10;
+    oCxt.arc(250,320,144,0,Math.PI);
+    oCxt.stroke();
+    oCxt.closePath();
+
+
+    oCxt.beginPath();
+    oCxt.strokeStyle="#fafae7";
+    oCxt.lineWidth=15;
+    oCxt.arc(250,320,132,0,Math.PI);
+    oCxt.stroke();
+    oCxt.closePath();
+
+    oCxt.beginPath();
+    oCxt.fillStyle="#e72824";
+    oCxt.arc(250,320,129,0,Math.PI);
+    oCxt.fill();
+    oCxt.closePath();
+
+    oCxt.beginPath();
+    oCxt.fillStyle="#000";
+    oCxt.arc(203,405,4,0,2*Math.PI);
+    oCxt.fill();
+    oCxt.closePath();
+
+    oCxt.beginPath();
+    oCxt.fillStyle="#000";
+    oCxt.arc(224,360,4,0,2*Math.PI);
+    oCxt.fill();
+    oCxt.closePath();
+
+    oCxt.beginPath();
+    oCxt.fillStyle="#000";
+    oCxt.arc(340,379,4,1.5*Math.PI,1.25*Math.PI);
+    oCxt.fill();
+    oCxt.closePath();
+
+    oCxt.beginPath();
+    oCxt.fillStyle="#000";
+    oCxt.arc(300,345,4,1.5*Math.PI,1.25*Math.PI);
+    oCxt.fill();
+    oCxt.closePath();
+
+    oCxt.beginPath();
+    oCxt.fillStyle="#000";
+    oCxt.arc(274,397,4,1.5*Math.PI,1.25*Math.PI);
+    oCxt.fill();
+    oCxt.closePath();
+
+    oCxt.beginPath();
+    oCxt.fillStyle="#000";
+    oCxt.arc(153,354,4,1.5*Math.PI,1.25*Math.PI);
+    oCxt.fill();
+    oCxt.closePath();
+</script>
+</body>
+</html>

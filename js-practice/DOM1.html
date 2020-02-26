@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    aaa
+</div>
+<ul id="ul1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<ul id="ul2">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <script>
+        var oDiv=document.getElementById("div1");
+        oDiv.onclick=function () {
+            oDiv.style.background="red";
+            oDiv.style.color="white";
+        }
+        var oUl2=document.getElementById("ul2");
+        var aLi=oUl2.getElementsByTagName("li");
+        /*aLi.onclick=function () {
+            aLi.style.background="red";
+            aLi.style.color="white";
+        }*/
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].innerHTML=Math.random();
+            aLi[i].style.background="red";
+        }
+
+    </script>
+</ul>
+</body>
+</html>

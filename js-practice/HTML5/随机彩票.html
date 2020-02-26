@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+<div>
+    <button id="btn">随机彩票</button>
+    <p id="b"></p>
+</div>
+
+<script>
+    var oBtn=document.getElementById("btn");
+    var oP=document.getElementById("b");
+    var obj={};
+    oBtn.onclick=function () {
+        var Arr=[];
+        var rand=Math.random();//生成随机锚点 hash值
+        for (var i=0;i<7;i++){
+            var num=Math.floor(Math.random()*35+1);
+            Arr.push(num);
+        }
+         location.hash=rand;//历史值
+        obj[rand]=Arr;
+        oP.innerHTML=Arr;
+    };
+    window.onhashchange=function () {
+        var hash=location.hash.substring(1);//字符串分割去掉锚点的#号
+        if(hash){
+            oP.innerHTML=obj[hash];
+
+        }
+        else{
+            oP.innerHTML='';
+        }
+    };
+
+</script>
+</body>
+</html>

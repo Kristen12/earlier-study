@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background: #000000;
+            -webkit-perspective: 800px;
+        }
+        #container{
+            margin:100px auto;
+            width: 200px;
+            height: 200px;
+            position:relative;
+            -webkit-transform-style: preserve-3d;
+            -webkit-animation: run 2s linear infinite;
+        }
+        @keyframes run  {
+            0%{
+
+            }
+            100%{
+                -webkit-transform: rotateY(360deg);
+            }
+        }
+        #container div{
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        #div1{
+            -webkit-transform: rotateX(90deg) translateZ(100px);
+        }
+        #div2{
+            -webkit-transform: translateZ(100px);
+        }
+        #div3{
+            -webkit-transform: rotateY(90deg) translateZ(100px);
+        }
+        #div4{
+            -webkit-transform: rotateY(180deg) translateZ(100px);
+        }
+        #div5{
+            -webkit-transform: rotateY(-90deg) translateZ(100px);
+        }
+        #div6{
+            -webkit-transform: rotateX(-90deg) translateZ(100px);
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="div1">1</div>
+    <div id="div2">2</div>
+    <div id="div3">3</div>
+    <div id="div4">4</div>
+    <div id="div5">5</div>
+    <div id="div6">6</div>
+</div>
+
+</body>
+
+
+<!--z轴始终相对于自身图片垂直
+    21行动画时infinite无限循环
+    Y轴顺时针旋转是-dep，逆时针旋转+dep
+-->
+</html>

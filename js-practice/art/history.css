@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    height:100%;
+}
+/*头开始*/
+#header{
+    height: 166px;
+}
+/*头结束*/
+
+/*内容开始*/
+#main{
+    height: 5072px;
+    background-color: #f8f8f8;
+}
+#wrapper{
+    width:1200px;
+    height: 5072px;
+    margin: 0 auto;
+}
+#navigation{
+    height:54px;
+}
+#main-left{
+    width: 235px;
+    height:487px;
+    margin: 0 15px 0 10px;
+    float: left;
+}
+#main-right{
+    width: 930px;
+    height:4937px;
+    float: right;
+    border-left: 1px solid #dddddd
+}
+#time-title{
+    height:45px;
+    width: 910px;
+    background-color: #fff;
+    margin-left: 12px;
+}
+#list{
+    margin:20px 0 0 12px;
+    width: 918px;
+    height:4800px;
+}
+#list ul li{
+    width:888px;
+    height: 198px;
+    padding: 10px;
+    border:1px solid #eaeaea;
+    margin-bottom: 20px;
+    background-color: #fff;
+
+}
+.li-left a{
+    display: block;
+    width: 617px;
+    height: 198px;
+    float: left;
+}
+.li-left a img{
+    width: 617px;
+    height: 198px;
+}
+.li-right{
+    float: right;
+}
+.li-right h2{
+    width: 230px;
+    line-height: 30px;
+    padding: 15px 0px;
+    margin-right: 15px;
+}
+.li-right h2 a{
+    font-size: 20px;
+    color: #333;
+}
+.li-right .p1{
+    color: #999;
+    font-size: 14px;
+    width: 230px;
+    margin-right: 15px;
+    position: relative;
+}
+.li-right .p1 img{
+    position: absolute;
+    top: 3px;
+ }
+.li-right .p1 span{
+    position: absolute;
+    left: 20px;
+}
+.li-right .p2{
+    margin-top: 24px;
+    margin-left: 150px;
+    position: relative;
+}
+.li-right .p2 span{
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    font-size: 18px;
+    font-weight:bold;
+    color: #fff;
+}
+.li-right .p3{
+    color: #777777;
+    font-size: 14px;
+}
+#list ul li a:hover{
+    color:#ad0015;
+}
+#list ul li:hover{
+    border-color:#ad0015;
+}
+/*内容结束*/

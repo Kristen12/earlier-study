@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则密码</title>
+</head>
+<body>
+<script>
+    var reg=/^(?![a-z0-9]*$)(?![a-zA-Z]*$)[a-zA-Z0-9]{6}$/;
+    while(!reg.test(prompt("输入新密码"))){
+        alert("密码格式不符。\n密码要求：6密码，只能是字母，数字的组合。至少包含一位大写字母，至少包含一位数字");
+    }
+    document.write("密码修改成功");
+</script>
+</body>
+</html>

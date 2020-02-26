@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.4</title>
+</head>
+<body>
+<script>
+    function fac(n) {
+        if(n==1){
+            return 1;
+        }
+        return n*fac(n-1);
+    }
+    var sum=0;
+    for(i=1;i<=10;i++){
+        sum=sum+fac(i);
+    }
+    console.log(sum);
+    /*编写程序，计算 1!+2!+3!+…..＋10！的结果。*/
+</script>
+</body>
+</html>

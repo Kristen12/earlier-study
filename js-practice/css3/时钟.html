@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #clock{
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            margin: 50px auto ;
+            position: relative;
+        }
+        #clock ul{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            list-style: none;
+            padding:0;
+            margin: 0;
+        }
+        #clock ul li{
+            width: 2px;
+            height: 4px;
+            background: #000;
+            transform-origin: 1px 100px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        #clock ul li:nth-child(5n+1){
+            height: 8px;
+        }
+        #hour{
+            height: 35px;
+            width: 6px;
+            background: #00fefe;
+            position: absolute;
+            top: 65px;
+            left: 97px;
+            transform-origin:center bottom;
+        }
+        #min{
+            height: 45px;
+            width: 4px;
+            background: #001afe;
+            position: absolute;
+            top: 55px;
+            left: 98px;
+            transform-origin: center bottom;
+            transform: rotate(15deg);
+        }
+        #sec{
+            height: 70px;
+            width: 2px;
+            background: #000;
+            position: absolute;
+            top: 30px;
+            left: 99px;
+            transform-origin:center bottom;
+        }
+        #dot{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 95px;
+            top: 95px;
+            background: #aaa;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<div id="clock">
+    <ul></ul>
+    <div id="hour"></div>
+    <div id="min"></div>
+    <div id="sec"></div>
+    <div id="dot"></div>
+</div>
+<script>
+    var oClock=document.getElementById("clock");
+    var oUl=oClock.getElementsByTagName("ul")[0];
+    var oHour=document.getElementById("hour");
+    var oMin=document.getElementById("min");
+    var oSec=document.getElementById("sec");
+    var strLi="";
+    for(var i=0;i<60;i++){
+        strLi+='<li style="-webkit-transform:rotate('+i*6+'deg)"></li>';
+    }
+    oUl.innerHTML=strLi;
+
+
+    function run(){
+        var date=new Date();
+        var h=date.getHours();
+        var m=date.getMinutes();
+        var s=date.getSeconds();
+        oHour.style.transform="rotate("+(h+m/60)*30+"deg)";
+        oMin.style.transform="rotate("+(m+s/60)*6+"deg)";
+        oSec.style.transform="rotate("+s*6+"deg)";
+    }
+    run();
+    setInterval(function () {
+        run();
+    },1000);
+</script>
+</body>
+
+
+
+<!--31行nth-child从1开始，因此不是5n而是5n+1
+    89行getElementsByTagName为数组类型
+    95行写入css的方法除了<style id="css">，还可以在body中用style=""的方法，再将其innerHTML
+    112行1秒等于1000毫秒
+-->
+</html>
+
+
+
+

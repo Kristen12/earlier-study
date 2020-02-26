@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //let  不存在变量提升
+        //var 可以变量提升
+        //let  变量不可以重新声明，但可以重新赋值
+         /*  let b = 5;
+         b = 10;
+         console.log(b); */
+        //let 临时实效区,在当前作用域中，不允许同名的变量进来
+        /*let a=5;
+        function b(){
+            console.log(a);
+            let a=10;
+            console.log(a);
+        }*/
+        //块级作用域
+        /*for(let i=0;i<5;i++){
+            console.log(i);
+        }
+        console.log(i);*/
+        var aLi = document.querySelectorAll('li');
+        for(var i=0; i<aLi.length; i++){
+            aLi[i].index = i;
+            aLi[i].onclick = function(){
+                /* var _this = this;
+                setTimeout(function(){
+                    console.log(_this.index);
+                },1000); */
+                setTimeout(function(){
+                    console.log(this.index);
+                }.bind(this),1000);
+            }
+        }
+        // call apply bind
+        </script>
+    </body>
+</html>

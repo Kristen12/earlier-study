@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.7</title>
+</head>
+<body>
+<script>
+    /*7.斐波纳契（Fibonacci）数列的第一项是1，第二项是1，以后各项都是前两项的和。
+    试用递归函数和非递归函数各编写一个程序，求斐波纳契数列第N项的值。*/
+    /*1 1 2 3 5 7 12*/
+    var i=parseInt(window.prompt("请输入一个数"));
+    function fib(i) {
+        if(i==1||i==2){
+            return 1;
+        }
+        else {
+            return fib(i-1)+fib(i-2);
+            //return arguments.callee(i-1) + arguments.callee(i-2);
+        }
+    }
+    document.write(fib(i));
+
+    //var n=parseInt(window.prompt("请输入一个数"));
+    //function fib1(n) {
+        //if(n==1||n==2){
+           // return 1;
+        //}
+        //var arr=[1,1];
+         //for(k=2;k<n;k++){
+             //arr[k]=arr[k-1]+arr[k-2];
+        // }
+        // return arr[n-1];
+    //}
+    //document.write(fib1(n));
+</script>
+</body>
+</html>

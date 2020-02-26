@@ -1,0 +1,940 @@
+
+/*广告大图开始*/
+#first-home{
+    position: relative;
+}
+#home-img1{
+    width:100%;
+    display: block;
+}
+#ad-home1{
+    width: 24px;
+    height:21px;
+    background: #47474A;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    font-weight: 900;
+    right: 2.4%;
+    padding: 0 5px;
+    position: absolute;
+    top: 2.5%;
+}
+#more-home1{
+    font-size: 18px;
+    color: #ffffff;
+    position: absolute;
+    right: 2.3%;
+    bottom: 3.9%;
+}
+
+#second-home{
+    position: relative;
+    display: none;
+}
+#home-img2{
+    width:100%;
+}
+#ad-home2{
+    width: 24px;
+    height:21px;
+    background: #47474A;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    font-weight: 900;
+    right: 0.9%;
+    padding: 0 5px;
+    position: absolute;
+    top:0.25%;
+}
+#more-home2{
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    right:1.5%;
+    bottom:1.03%;
+}
+/*广告大图结束*/
+
+
+
+/*星享俱乐部开始*/
+#home-rewards{
+    /*width: 100%; 767时padding值会撑大*/
+    background: #0f0f0f;
+}
+#container{
+    width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.rewards-mark{
+    width: 260px;
+    height: 145px;
+    background:  #0f0f0f url("img/rewards_bg.png") 0 0 no-repeat;
+    background-size: contain;
+    padding: 75px 0 0 60px;
+    float: left;
+}
+.rewards-mark p{
+    color: #fff;
+    font-size: 18px;
+}
+.rewards-mark img{
+    width: 160px;
+}
+.rewards-content{
+    width: 430px;
+    float: right;
+    height: 100%;/*767px时高为内容撑开*/
+}
+.rewards-content h3{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 40px;
+}
+.rewards-content p{
+    font-size: 16px;
+    color: #fff;
+}
+.rewards-btns .btns{
+    width: 114px;
+    height: 50px;
+    border:1px solid #b89f7a;
+    background: #000000;
+    display: block;/*可以不写，因为float后会使元素变成块元素*/
+    text-align: center;
+    line-height: 50px;
+    color:#b89f7a;
+    float: left;
+    margin-right: 20px;
+}
+.rewards-btns{
+    margin-top: 20px;
+}
+#btn-p{
+    color:#b89f7a;
+    margin-left: 30px;
+    line-height: 50px;
+}
+.rewards-btns .btns:hover{
+    background: #b89f7a;
+    color: #ffffff;
+}
+/*星享俱乐部结束*/
+
+
+
+/*APP开始*/
+#app{
+    background:#efebe8 url(img/app-web.png) 0 0 no-repeat;
+    background-size:contain;
+    padding-top:23% ;/*高度可以使用padding-top来设置，按照图片本身宽高设置比例*/
+    position: relative;
+    /*height: 300px;*/
+}
+#app img{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left:41%;
+    top:50%;/*设置图片居中*/
+    -webkit-transform: translateY(-50%);
+}
+#app-text{
+    width:35%;
+    position: absolute;
+    left:41%;
+    top:50%;
+    /*-webkit-transform: translateY(-50%);*/
+    -webkit-transform:  translateY(-50%) translateX(147px);
+}
+#app-text p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #3d3d3d;
+    margin-bottom: 10px;
+}
+#app-text a{
+    color: #b89f7a;
+    font-size: 16px;
+}
+#btns{
+    display: none;
+}
+/*APP结束*/
+
+
+
+/*天猫推荐开始*/
+#mosaic{
+    overflow: hidden;
+}
+#mosaic-left{
+    background:url("img/tmall-banner-20180109104542.jpg")0 0 no-repeat;
+    background-size:contain;
+    width: 50%;
+    float: left;
+    padding-top: 50%;
+    position: relative;
+    letter-spacing: 3px;
+}
+#mosaic-right{
+    background:url("img/FT-Grid (2)-20170328191448.jpg")0 0 no-repeat;
+    background-size:contain;
+    width: 50%;
+    float: right;
+    padding-top:50%;
+    position: relative;
+    letter-spacing: 3px;
+}
+#mosaic-left h2{
+    position: absolute;
+    top: 90%;
+    -webkit-transform: translateY(-100%);
+    width: 100%;
+    text-align: center;
+    color:#D81026;
+    }
+#mosaic-left h5{
+    position: absolute;
+    top: 90%;
+    -webkit-transform: translateY(-1%);
+    width: 100%;
+    text-align: center;
+}
+#mosaic-right h2{
+    position: absolute;
+    top: 90%;
+    -webkit-transform: translateY(-100%);
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+#mosaic-right h5{
+    position: absolute;
+    top: 90%;
+    -webkit-transform: translateY(-1px);
+    width: 100%;
+    text-align: center;
+    color:#a98e67;
+}
+/*天猫推荐结束*/
+
+
+
+/*用星说开始*/
+#star-say{
+    background: #106e4b;
+}
+#star-say-container{
+    width:767px;
+    height: 160px;
+    margin:0 auto;
+    padding: 30px 0;
+}
+#star-say-img1{
+    width: 177.188px;
+    height:127.500px;
+    background: url(img/wsg-title.png) center/contain no-repeat;
+    float: left;
+    margin: 10px 25px 0 25px;
+}
+#star-say-img2{
+    width: 106.312px;
+    height: 150px;
+    background: url(img/qrcode.svg) center/contain no-repeat;
+    float: left;
+    margin: 0 25px;
+}
+#star-say-img3{
+    width: 98.891px;
+    height: 162px;
+    background: url(img/wsg-cup.png) center/contain no-repeat;
+    float: left;
+    margin: 0 25px;
+}
+#star-say-img4{
+    width: 184.609px;
+    height: 142.797px;
+    background: url(img/wsg-wording.png) center/contain no-repeat;
+    float: left;
+    margin: 0 25px;
+}
+/*用星说结束*/
+
+
+
+/*Apple watch开始*/
+#Apple-watch{
+    background: #edeceb;
+    height:630px;
+}
+#Apple-container{
+    background: url("img/mobile-iwatch-cn.png") center center no-repeat;
+    background-size: contain;
+    height: 338px;
+    margin: 0 auto;
+}
+#Apple-words{
+    padding: 0 31px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    text-align: center;
+    color: #3d3d3d;
+}
+#Apple-words a{
+    color: #b89f7a;
+}
+#Apple-btn a{
+    display: block;
+    width: 188px;
+    height:75px;
+    background: url("img/udp-starbucks-cn.svg") center center no-repeat;
+    background-size: contain;
+    margin:0 auto;
+}
+/*Apple watch结束*/
+
+
+
+/*精选开始*/
+#collection{
+    padding:80px 16px;
+    background: #f5f5f5;
+}
+#collection h3{
+    color:#3d3d3d;
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+#collection-title{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 80px;
+    color:#8B8B8B;
+}
+#pro-list{
+    /*display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-lines:multiple;*/
+    display: flex;/* 新的弹性和模型*/
+    -webkit-justify-content: center; /* 水平居中*/
+    -webkit-flex-wrap:wrap; /* 换行显示*/
+}
+#pro-list img{
+    width: 240px;
+    height: 160px;
+}
+#pro-list li{
+    width: 240px;
+    height: 280px;
+    margin: 15px;
+    border: 2px solid #eeeeee;
+    background: #f5f5f5;
+}
+#pro-list h4{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #2F2F2F;
+}
+#pro-list p{
+    text-align: center;
+    font-size: 14px;
+    color: #707175;
+    margin-top: 5px;
+}
+/*精选结束*/
+
+
+
+/*咖啡文化开始*/
+#reserve{
+    background: #060608;
+    height: 525px;
+}
+#reserve-container{
+    width:940px;/*定宽时才可以使用margin 0 auto来居中*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+#reserve img{
+    width: 480px;
+    height: 525px;
+    float: left;
+}
+#reserve-cell{
+    width: 460px;
+    height: auto;
+    float: right;
+    margin-top: 129px;
+}
+#reserve-cell h3{
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 22px;
+    color: #a98e67;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 28px 0 13px 0;
+}
+#reserve-cell p{
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 28px;/*行间距*/
+    color: #707070;
+    text-align: center;
+}
+#reserve-btn{
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 32px;
+    overflow: hidden;
+    display: flex;/* 新的弹性和模型*/
+    -webkit-justify-content: center;
+}
+#reserve-btn1{
+    padding: 14px 40px;
+    border: 2px solid #b89f7a;
+    color: #b89f7a;
+    margin: 7px 14px 7px ;
+    width: 60px;
+    height: 18px;
+    display: block;
+    font-size: 14px;
+    float: left;
+
+}
+#reserve-btn2{
+    padding: 14px 40px;
+    border: 2px solid #b89f7a;
+    color: #b89f7a;
+    margin: 7px 14px 7px ;
+    width: 75px;
+    height: 18px;
+    display: block;
+    float: left;
+}
+#reserve-btn a:hover{
+    background: #b89f7a;
+    color: #ffffff;
+}
+/*咖啡文化结束*/
+
+
+
+/*脚开始*/
+#foot{
+    background: #292929;
+    padding: 60px 0 20px 0;
+}
+#foot-container{
+    width: 1140px;
+    margin: 0 auto;
+}
+#foot-row1{
+    width: 100%;
+    height: 241px;
+    margin-bottom: 80px;
+}
+#foot-row1-col1 ul{
+    width: 285px;
+    height: 241px;
+    float: left;
+}
+#foot-row1-col2 ul{
+    width: 285px;
+    height:207px;
+    float: left;
+}
+#foot-row1-col3 ul{
+    width: 285px;
+    height:207px;
+    float: left;
+}
+#foot-row1-col4 ul{
+    width: 285px;
+    height:139px;
+    float: left;
+}
+#foot-row1 ul li{
+    margin-bottom: 7px;
+}
+#foot-row1 ul li a{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+.foot-row-head{
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+}
+#foot-row2{
+    width: 100%;
+    height: 275px;
+    margin-bottom: 80px;
+}
+#foot-row2-col1 ul{
+    width: 285px;
+    height: 275px;
+    float: left;
+}
+#foot-row2-col2 ul{
+    width: 285px;
+    height:173px;
+    float: left;
+}
+#foot-row2-col3 ul{
+    width: 285px;
+    height:241px;
+    float: left;
+}
+#foot-row2 ul li{
+    margin-bottom: 7px;
+}
+#foot-row2 ul li a{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+#foot-row2-col4{
+    float: left;
+}
+#foot-row2-col4 img{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+}
+#foot-row2-col4 p{
+    width: 100px;
+    height: 21px;
+    color: #A3A3A3;
+    margin-bottom: 14px;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+}
+#foot-row3{
+    overflow: hidden;
+}
+#foot-row3-content{
+    float: left;
+}
+#foot-row3-icons{
+    float: right;
+}
+#foot-row3-content p{
+    color: rgba(255, 255, 255, 0.6);
+    width: 250px;
+    font-size: 12px;
+}
+#foot-row3-content a{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
+#foot-row3-content img{
+    width: 15px;
+    height: 15px;
+}
+#foot-row3-icons img{
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+}
+#foot-container2{
+    display: none;
+}
+/*脚结束*/
+
+
+
+/*媒体查询开始*/
+@media screen and (max-width:1199px){
+    /*脚开始*/
+    #foot-container{
+        width: 970px;
+    }
+    #foot-row1-col1 ul{
+        width: 235px;
+    }
+    #foot-row1-col2 ul{
+        width: 235px;
+
+    }
+    #foot-row1-col3 ul{
+        width: 235px;
+    }
+    #foot-row1-col4 ul{
+        width: 235px;
+    }
+    #foot-row2-col1 ul{
+        width: 235px;
+    }
+    #foot-row2-col2 ul{
+        width: 235px;
+    }
+    #foot-row2-col3 ul{
+        width: 235px;
+    }
+    /*脚结束*/
+}
+
+
+
+@media screen and (max-width: 991px){
+    /*广告大图开始*/
+    #home-img2{
+        width: 100%;
+        display: block;
+    }
+    #home-img1{
+        display: none;
+    }
+    #second-home{
+        display: block;
+        width: 100%;
+    }
+    /*广告大图结束*/
+
+    /*咖啡文化开始*/
+    #reserve-container{
+        width:720px;
+    }
+    #reserve-cell{
+        width: 240px;
+        float: left;
+        margin-top: 47px;
+    }
+    #reserve-btn{
+        float: none;
+        display:block;
+    }
+    #reserve-btn1{
+        margin-left: 43px;
+    }
+    #reserve-btn2{
+        margin-left: 37px;
+    }
+    /*咖啡文化结束*/
+
+    /*脚开始*/
+    #foot-container{
+        width: 720px;
+        padding: 0 15px;
+    }
+    #foot-row1-col1 ul{
+        width: 180px;
+    }
+    #foot-row1-col2 ul{
+        width: 180px;
+
+    }
+    #foot-row1-col3 ul{
+        width: 180px;
+    }
+    #foot-row1-col4 ul{
+        width: 180px;
+    }
+    #foot-row2-col1 ul{
+        width: 180px;
+    }
+    #foot-row2-col2 ul{
+        width: 180px;
+    }
+    #foot-row2-col3 ul{
+        width: 180px;
+    }
+    #foot-row1 ul li a{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #foot-row2 ul li a{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    /*脚结束*/
+}
+
+
+
+@media screen and (max-width: 767px) {
+    /*星享俱乐部开始*/
+    #home-rewards{
+        padding: 0 35px;
+    }
+    .rewards-mark,.rewards-content{
+        width: 100%;
+    }
+    #container{
+        width: 100%;
+    }
+    .rewards-mark{
+        padding: 55px 0 0 0;
+        text-align: center;
+        height: 85px;
+    }
+    .rewards-content{
+        text-align: center;
+    }
+    .rewards-content h3{
+        margin-bottom: 10px;
+    }
+    .rewards-btns {
+        margin-top: 40px;
+    }
+    .rewards-btns .btns{
+        width: 80%;
+        float: none;
+        display: block;
+        margin:0 auto 10px;
+    }
+    #btn-p{
+        display: block;
+        text-align: right;
+    }
+    /*星享俱乐部结束*/
+
+    /*官方APP开始*/
+    #app{
+          background-image: url(img/app-mobile.png);/*如果只是background则background-size：contain会被覆盖*/
+           padding-top:98% ;
+
+        }
+    #app img{
+             display: none;
+        }
+    #app-text{
+             width: 92%;
+             padding: 4%;
+             position: static;/*取消定位*/
+             -webkit-transform:  translateY(0) translateX(0);
+             text-align: center;
+         }
+    #app-text p{
+             text-align: center;
+             margin-bottom: 40px;
+         }
+    #btns{
+             display: block;
+             width: 220px;
+             height: 80px;
+             margin:10px auto 0;
+             background: url("img/udp-starbucks-cn.svg") center center no-repeat;/*因为图片底下有阴影，所以最好设置成center*/
+         }
+    /*官方APP结束*/
+
+    /*天猫推荐开始*/
+    #mosaic-left{
+        width: 100%;
+        padding-top: 100%;
+    }
+    #mosaic-right{
+        width: 100%;
+        padding-top: 100%;
+    }
+    #mosaic-left h2,#mosaic-right h2{
+        font-size: 30px;
+    }
+    /*天猫推荐结束*/
+
+    /*用星说开始*/
+    #star-say{
+        padding: 0 35px;
+    }
+    #star-say-container{
+        width: 100%;
+        height: 322px;
+    }
+    #star-say-img2{
+        width: 150px;
+        height:76.5px;
+        background: url(img/wsg-title.png) center/contain no-repeat;
+        margin: 46px 0 0 5px;
+        display: inline-block;
+    }
+    #star-say-img3{
+        width:120px;
+        height: 120px;
+        background: url(img/qrcode.svg) center/contain no-repeat;
+        margin: 0 0 0 38px;
+        display: inline-block;
+    }
+    #star-say-img1{
+        width: 150px;
+        height: 162px;
+        background: url(img/wsg-cup.png) center/contain no-repeat;
+        margin: 0;
+        display: inline-block;
+    }
+    #star-say-img4{
+        width: 180px;
+        height: 91.797px;
+        background: url(img/wsg-wording.png) center/contain no-repeat;
+        margin: 0 0 0 15px;
+        display: inline-block;
+    }
+    #star-say-top{
+        overflow: hidden;
+        padding: 5px 0;
+        display: flex;
+        justify-content:center;
+        height: 172px;
+    }
+    #star-say-bottom{
+        overflow: hidden;
+        padding: 5px 0;
+        display: flex;
+        justify-content:center;
+        height: 130px;
+    }
+    /*用星说结束*/
+
+    /*咖啡文化开始*/
+    #reserve{
+        padding:40px 35px 40px 35px;
+        height: auto;
+    }
+    #reserve-container{
+        width:100%;
+    }
+    #reserve-container img{
+        width: 500px;
+        height: auto;
+        max-width: 100%;
+    }
+    #reserve-cell{
+        width: 100%;
+        margin: 0;
+    }
+    #reserve-cell h3{
+        font-weight: 800;
+        font-size: 24px;
+        letter-spacing: 4px;
+        margin: 30px 0 20px;
+    }
+    #reserve-btn{
+        width: 100%;
+        margin-top: 32px;
+    }
+    #reserve-btn1{
+        float: none;
+        width: 65%;
+        padding:14px auto;
+        text-align: center;
+        margin: 25px auto 0 auto;
+     }
+    #reserve-btn2{
+        float: none;
+        width: 65%;
+        padding:14px auto;
+        text-align: center;
+        margin: 32px auto 0 auto;
+    }
+    /*咖啡文化结束*/
+
+    /*脚开始*/
+    #foot{
+        padding: 20px 0 30px 0;
+    }
+    #foot-container{
+        display:none;
+    }
+    #foot-container2{
+        display: block;
+        padding: 0 15px;
+    }
+    #foot-container2-list ul{
+        width:100%;
+    }
+    #foot-container2-list ul li{
+        margin-bottom: 15px;
+        color: #ffffff;
+        font-size:18px;
+        font-weight: 600;
+        height: 30px;
+    }
+    #foot-container2-list ul li span{
+      float: right;
+    }
+
+    #foot-container2-icon{
+        overflow: hidden;
+        margin-top: 40px;
+    }
+    #foot-row3-content2{
+        float: left;
+    }
+    #foot-row3-icons2{
+        float: right;
+    }
+    #foot-row3-content2 p{
+        color: rgba(255, 255, 255, 0.6);
+        width: 250px;
+        font-size: 12px;
+    }
+    #foot-row3-content2 a{
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+    }
+    #foot-row3-content2 img{
+        width: 15px;
+        height: 15px;
+    }
+    #foot-row3-icons2 img{
+        width: 30px;
+        height: 30px;
+        margin: 13px 10px 0 0 ;
+    }
+    /*脚结束*/
+}
+
+
+
+@media screen and (max-width: 667px){
+    /*精选开始*/
+    #pro-list img{
+        width: 136px;
+        height: 86px;
+    }
+    #pro-list li{
+        width: 136px;
+        height: 220px;
+        margin: 10px;
+        border: 1px solid #eeeeee;;
+    }
+    /*精选结束*/
+}
+
+
+
+@media screen and (max-width: 374px){
+    /*用星说开始*/
+    #star-say-container{
+        width: 100%;
+        height: 260px;
+    }
+    #star-say-img1{
+        width: 120px;
+        height: 130px;
+    }
+    #star-say-img2{
+        width: 120px;
+        height:61.19px;
+    }
+    #star-say-img3{
+         width:90px;
+         height: 90px;
+     }
+    #star-say-img4{
+        width:150px;
+        height: 76.5px;
+    }
+    #star-say-top{
+        height: 150px;
+    }
+    #star-say-bottom{
+        height: 110px;
+    }
+    /*用星说结束*/
+}

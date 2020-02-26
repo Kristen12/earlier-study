@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*头开始*/
+#header{
+    display: -webkit-box;/*弹性盒模型*/
+    height: 100px;
+    box-shadow: 0 -5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 3px;/*将上边框的阴影样式显示出来*/
+}
+#menu{
+    -webkit-box-flex: 5;
+    width: 0;/*当弹性盒模型有内容时*/
+    padding-left: 33px;
+}
+#menu .menu-icon{
+    margin-top: 32px;
+    cursor: pointer;
+}
+#menu p{
+    font-size: 12px;
+    letter-spacing: 0.5px;/*改变字符之间的空白*/
+    width: 30px;
+    text-align: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#menu p:hover{
+    opacity: 1;
+}
+#logo{
+    -webkit-box-flex: 2;
+    width: 0;
+    text-align: center;
+}
+#logo img{
+    width: 73px;
+    max-width: 100%;/*宽度大于设置的宽时宽为设置的宽，小于时宽充满父元素*/
+    margin-top:14px;
+}
+#user-info{
+    -webkit-box-flex: 5;
+    width: 0;
+    padding-right: 28px;
+}
+#user-info p{
+    text-align: right;
+    font-size: 16px;
+}
+#user-info .user-title{
+    margin-top: 30px;
+    color: #4e4e4e;
+}
+#user-info a{
+    color: #b89f7a;
+    font-size: 14px;
+    font-weight: 700;
+}
+/*头结束*/
+@media screen and (max-width: 768px) {
+    #menu{
+        padding-left: 15px;
+    }
+    #user-info{
+        padding-right: 10px;
+    }
+    #user-info p{
+        font-size: 12px;
+    }
+    #user-info a{
+        font-size: 12px;
+    }
+}
+

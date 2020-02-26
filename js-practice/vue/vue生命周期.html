@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="app">
+    {{msg}}
+</div>
+<script src="vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            msg:'aaa'
+        },
+        beforeCreate:function(){
+            console.log('beforeCreate',this.$data,this.$el);
+        },//beforeCreate undefine undefine
+        created:function(){
+            console.log('created',this.$data,this.$el);
+        },//created obj undefine
+        beforeMount:function(){
+            console.log('beforeMount',this.$data,this.$el);
+        },//beforeMount obj {{msg}}
+        mounted:function(){
+            console.log('mounted',this.$data,this.$el);
+        },//mounted obj aaa
+        beforeUpdate:function(){
+            console.log('beforeUpdate');
+        },//beforeUpdate 然后才更新赋值
+        updated:function(){
+            console.log('updated');
+        },// 更新赋值 updated
+        beforeDestroy:function(){
+            console.log('beforeDestroy');
+        },
+        destroyed:function(){
+            console.log('destroyed');
+        }
+    });
+</script>
+
+</body>
+
+</html>

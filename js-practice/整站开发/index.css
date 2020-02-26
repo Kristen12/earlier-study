@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+html{
+     width: 100%;
+ }
+body{
+    width: 100%;
+}
+
+.wrapper{
+    width: 1002px;
+    margin:0 auto;
+    position: relative;
+}
+
+/*header开始*/
+#header{
+    height:141px;
+    width: 1280px;
+}
+#logo{
+    width: 194px;
+    height: 120px;
+    float: left;
+}
+#logo a{
+    margin-top: 29px;
+    float: left;
+}
+.nav{
+    float: left;
+    margin-left: 134px;
+    margin-top: 49px;
+}
+.nav li{
+    float: left;
+    padding: 0 24px 0 25px;
+    position: relative;
+}
+.nav li::after{
+    content: '';
+    height: 14px;
+    width: 1px;
+    background: #6b6b6b;
+    display: block;
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top:-7px;
+}
+.nav a{
+    color: #626262;
+    font-size: 15px;
+}
+.nav .active a{
+    color: #00aeff;
+}
+
+#search-t{
+    width:90px;
+    height: 27px;
+    position: absolute;
+    top: 46px;
+    margin-left: 49px;
+    background: #f1f3f6;
+    border: 1px solid #f5f1f6;
+    padding-left: 11px;
+    outline: none;
+}
+input::-webkit-input-placeholder{
+    display: block;
+    color:#a3a3a3;
+    opacity:1;
+}
+#search-b{
+    width:29px;
+    height: 29px;
+    position: absolute;
+    top: 46px;
+    margin-left: 152px;
+    background: #f1f3f6;
+    border: 1px solid #f5f1f6;
+    outline: none;
+}
+#input-box img{
+    position: absolute;
+    top: 41px;
+    left:972px;
+    cursor: pointer;
+}
+
+.nav #nav-last::after{
+    content:"";
+    display: none;
+}
+/*header结束*/
+
+
+
+
+/*轮播图开始*/
+#roll-img{
+    width: 1280px;
+    height: 460px;
+    background: #31333e;
+}
+#roll-btn #prev{
+    position: absolute;
+    left: -71px;
+    top: 131px;
+}
+#roll-btn #next{
+    position: absolute;
+    left: 902px;
+    top: 131px;
+}
+#roll-btn:hover{
+    cursor: pointer;
+}
+#container-img{
+    width: 1002px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+
+}
+#container-img ul{
+    width: 6012px;
+    position: absolute;
+
+}
+#container-img ul li img{
+    width: 1002px;
+    height: 460px;
+}
+#item li{
+    float: left;
+}
+/*轮播图结束*/
+
+
+
+
+/*设计理念开始*/
+#blank{
+    width: 1280px;
+    height: 492px;
+}
+#blank li{
+    float: left;
+}
+#blank1{
+    text-align: center;
+    width: 334px;
+    height: 492px;
+}
+#blank2{
+    text-align: center;
+    width: 335px;
+    height: 492px;
+}
+#blank3{
+    text-align: center;
+    width: 330px;
+    height: 492px;
+}
+#blank h2{
+    margin-top: 86px;
+    color: #626262;
+}
+#blank p{
+    font-size: 15px;
+    color: #696b71;
+    padding: 0 15px;
+}
+#blank a{
+    display: block;
+    margin-top: 32px;
+    color: #00aeff;
+}
+/*设计理念结束*/
+
+
+
+/*our works开始*/
+#works{
+    width: 1280px;
+    height: 500px;
+    background:#e2e7ed;
+}
+#works ul{
+    position: absolute;
+    margin-top: 71px;
+}
+#works li{
+    float: left;
+}
+#works img{
+    width: 250px;
+    display: block;
+}
+#works p{
+    position: absolute;
+    font-size: 30px;
+    top: 28px;
+    color: #626262;
+
+}
+/*our works结束*/
+
+
+
+
+
+/*公司商标开始*/
+#company{
+    width: 1280px;
+    height: 154px;
+    background: #ffffff;
+}
+
+#company li{
+    float: left;
+    width: 250px;
+}
+#company ul img{
+    width: 250px;
+    height: 154px;
+}
+#company #font{
+    position: absolute;
+    left: 0;
+    top: 15px;
+    color: #626262;
+    font-size: 30px;
+}
+#prev2{
+    position: absolute;
+    left: -13px;
+    top:76px;
+    cursor: pointer;
+}
+#next2{
+    position: absolute;
+    left: 962px;
+    top:76px;
+    cursor: pointer;
+}
+
+
+#company-box{
+    width: 1002px;
+    height: 154px;
+    overflow: hidden;
+    position: relative;
+
+}
+#company-box ul{
+    width: 2004px;
+    position: absolute;
+
+}
+
+/*公司商标开始*/
+
+
+/*尾开始*/
+#footer{
+    width: 1280px;
+    height: 176px;
+    background: #31333e;
+}
+
+.nav1{
+    float: left;
+    position: absolute;
+    top: 44px;
+    left: -16px;
+}
+.nav1 li{
+    float: left;
+    padding:  0 16px 0px 16px;
+    position: relative;
+}
+.nav1 li::after{
+    content: '';
+    height: 14px;
+    width: 1px;
+    background: #e2e7ed;
+    display: block;
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top:-7px;
+}
+.nav1 #nav-last1::after{
+    content:"";
+    display: none;
+}
+#footer a{
+    color: #e2e7ed;
+    font-size: 15px;
+}
+#footer #p1{
+    position: absolute;
+    top: 70px;
+    color: #e2e7ed;
+    font-size: 15px;
+}
+#footer #p2{
+    position: absolute;
+    top: 120px;
+    color: #e2e7ed;
+    font-size: 12px;
+}
+#footer #web li{
+    float: left;
+    padding: 0 8px 0 0;
+}
+#footer #web{
+    position: absolute;
+    top: 45px;
+    left: 714px;
+}
+/*尾结束*/

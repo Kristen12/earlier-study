@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1"></div>
+<input type="text" id='ipt1'>
+<!--<div id="ipt1"><input type="text"></div> 结果是undefined-->
+<script>
+    obj={
+        msg:'aaa'
+    };
+    Object.defineProperty(obj,"msg",{
+        set:function (val) {
+            document.getElementById("div1").innerHTML=val;
+        }
+    });
+    var oIpt=document.getElementById("ipt1");
+    oIpt.onkeyup=function () {
+        obj.msg=this.value;
+    };
+</script>
+</body>
+</html>

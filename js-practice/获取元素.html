@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    aaa
+</div>
+<ul id="ul1">
+    <li class="aa">1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<ul id="ul2">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+</ul>
+<script>
+    /*封装.getEleByClassName Dom3兼容性问题  方法*/
+    function getEleByClassName(clsName,context) {
+        var result=[];
+        /*if(context){
+            var parentEle=context;
+            }
+            else {
+                var parentEle=document;
+            }
+        var allELe=parentEle.getElementsByTagName("*"); context没传值为undefide*/
+        var parentEle=context||document;
+        var allELe=parentEle.getElementsByTagName("*");
+        for(var i=0;i<allELe.length;i++){
+            var arr=allELe[i].className.split(" ");
+            for(var j=0;j<arr.length;j++){
+                if (arr[j]==clsName){
+                    result.push(allELe[i]);
+                }
+            }
+        }
+        return result;
+    }
+    var oUl1=document.getElementById("ul1");
+    var aA=getEleByClassName("aa",oUl1);
+    for(var j=0;j<aA.length;j++){
+        aA[j].style.background="red";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.3</title>
+</head>
+<body>
+<script>
+    function fac(n) {
+        if(n==1){
+            return 1;
+        }
+        return n*fac(n-1);
+    }
+    fac(10);
+    document.write(fac(10));
+
+
+
+    function fac1(n) {
+        var sum=1;
+        for(i=1;i<=n;i++){
+            sum=sum*i;
+        }
+        return sum;
+    }
+    document.write(fac1(10));
+    /* 1.	编写程序，用户输入的一个数字(0~6)．通过警示对话框显示对应的星期几
+     (0: 星期日; 1: 星期一;……6: 星期六;)。*/
+</script>
+</body>
+</html>

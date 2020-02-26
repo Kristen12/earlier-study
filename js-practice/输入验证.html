@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输入验证</title>
+</head>
+<body>
+<script>
+    var code="4eAt";
+    var input="";
+    while((input=prompt("请输入验证码:"+code)).toUpperCase()!=code.toUpperCase()){
+        alert("验证码输入错误");
+    }
+    document.write("success");
+</script>
+</body>
+</html>

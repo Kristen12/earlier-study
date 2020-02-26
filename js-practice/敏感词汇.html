@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>敏感词汇</title>
+</head>
+<body>
+<button onclick="document.write(encode(prompt('请输入一句话')))">编码</button>
+<button onclick="document.write(decode(prompt('输入编码')))">解码</button>
+<button onclick="findkwords(prompt('输入回复'))">回复</button>
+<script>
+    function encode(input) {
+        for(var i=0,arr=[];i<input.length;i++){
+            var unicode=input.charCodeAt(i);
+            if(unicode<100){
+                unicode="000"+unicode;
+            }else if(unicode<1000){
+                unicode="00"+unicode;
+            }
+            arr.push(unicode);
+        }
+        return arr.join("");
+    }
+
+function decode (code){
+        for(var i=0,arr=[];i<code.length;i+=5){
+            arr.push(String.fromCharCode(code.substr(i,5)))
+        }
+        return arr.join("");
+}
+
+    var kword="fuck";
+    function findkwords(input) {
+        var index=-1;
+        while((index=input.indexOf(kword,index+1))){
+            alert("在位置"+index+"发现敏感词");
+        }
+    }
+</script>
+</body>
+</html>

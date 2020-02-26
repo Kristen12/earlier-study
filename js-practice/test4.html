@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+</head>
+<body>
+<div id="aaa" onclick="alert('哈哈')">
+    这是一个测试
+</div>
+<div id="bbb">测试二</div>
+<script>
+    var Odiv=document.getElementById("bbb");
+    Odiv.onclick=function () {
+        alert("哦");
+    }
+    var year=window.prompt("请输入出生年份!","")*1;
+     var month=window.prompt("请输入出生月份!","")*1;
+     var date = window.prompt("请输入出生日!","")*1;
+     if (!year || !month || !date) {//NaN转换成布尔值将会是false
+     alert("您的输入有误!");
+     } else {
+     var timeMachine=new Date();
+     timeMachine.setFullYear(year);
+     timeMachine.setMonth(month-1);//记住,月份是从0开始计数的
+     timeMachine.setDate(date);
+     var trueYear = timeMachine.getFullYear();
+     var trueMonth = timeMachine.getMonth()+1;//记住,月份是从0开始计数的
+
+     console.log(trueMonth);
+     var trueDate = timeMachine.getDate();
+     if (trueYear != year || trueMonth != month || trueDate != date) {
+     alert("不是同一个日期");
+     } else {
+     alert("此日期有效");
+     }
+     }
+
+    var date1 = new Date();
+    date1.setDate(32);
+    console.log(date1.getMonth()+1);
+    console.log(date1.getDate());
+
+    var person={
+        name:"zhang",
+        age:19,
+        eat:function () {
+            console.log("abc");
+        }
+    }
+    console.log(person.name);
+    person.eat();
+</script>
+</body>
+</html>

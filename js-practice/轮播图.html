@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #container{
+            width:680px;
+            height:344px;
+            margin: 50px auto;
+            position: relative;
+        }
+        #img-box img{
+
+            display: none;
+        }
+        #img-box .selected{
+            display: block;
+            width: 753px;
+        }
+        #tab{
+            position: absolute;
+            right:-65px;
+            bottom: -50px;
+        }
+        #tab li{
+            width: 20px;
+            height:20px;
+            background: #000000;
+            color: #ffffff;
+            text-align: center;
+            line-height: 20px;
+            float: left;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        #tab li.selected{
+            background: orange;
+        }
+        #prev-btn, #next-btn{
+            position: absolute;
+            bottom: -50px;
+            width: 20px;
+            height:20px;
+            line-height: 20px;
+            text-align: center;
+            background: #000000;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        #prev-btn{
+            left: 10px;
+        }
+        #next-btn{
+            left: 35px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="img-box">
+        <img  class="selected" src="img/1.jpg">
+        <img src="img/2.jpg">
+        <img src="img/3.jpg">
+        <img src="img/1.jpg">
+    </div>
+    <ul id="tab">
+        <li class="selected">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <span id="prev-btn">&lt;</span>
+    <span id="next-btn">&gt;</span>
+    <script>
+        var oTab=document.getElementById("tab");
+        var aLi=oTab.getElementsByTagName("li");
+        var oImgBox=document.getElementById("img-box");
+        var aImg=oImgBox.getElementsByTagName("img");
+        var oNextBtn=document.getElementById("next-btn");
+        var iNow=0;
+        var oPrevBtn=document.getElementById("prev-btn");
+        var oContainer=document.getElementById("container");
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].index=i;
+            aLi[i].onmouseover=function () {
+                iNow=this.index;//鼠标移到列表上时将当前索引修改
+                changeImg(this.index);
+            }
+        }
+         oNextBtn.onclick=function () {
+            iNow++;
+            if(iNow>=aImg.length){
+                iNow=0;
+            }
+            changeImg(iNow);
+        };
+        function changeImg(idx) {//在函数中this指向window
+            for(var j=0;j<aLi.length;j++){
+                aLi[j].className="";
+                aImg[j].className="";
+            }
+            aLi[idx].className="selected";
+            aImg[idx].className="selected";
+        }
+        oPrevBtn.onclick=function () {
+            iNow--;
+            if(iNow==-1){
+                iNow=aImg.length-1;
+            }
+            changeImg(iNow);
+        };
+        var timer;
+        run();
+        oContainer.onmouseover=function () {
+            clearInterval(timer);
+        };
+        oContainer.onmouseout=function () {
+            run();
+        };
+        function run() {
+            timer=setInterval(function () {
+                oNextBtn.onclick();
+            },1000)
+        }
+
+    </script>
+</div>
+</body>
+</html>

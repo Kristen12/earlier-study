@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var oScript=document.createElement("script");
+    oScript.src="async.js";
+    document.body.appendChild(oScript);
+    //动态创建script标签 异步加载
+    //异步加载文件的两种方式：1：async： 标准浏览器 文件加载完就执行 不能保证顺序
+    // 2：defer：IE 网络加载完 执行文件 能保证顺序执行
+    //加载js文件  通过正则表达式匹配加载文件
+
+</script>
+</body>
+</html>
